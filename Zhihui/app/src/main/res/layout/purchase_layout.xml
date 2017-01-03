@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/middle_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/pro_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pikaqiiu"/>
+
+            <TextView
+                android:id="@+id/pro_name"
+                style="@style/text20_black"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pro_img"
+                android:gravity="center_vertical"
+                android:text="皮卡丘抱枕"
+                />
+
+            <LinearLayout
+                android:id="@+id/details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pro_name"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快递费:"/>
+
+                <TextView
+                    android:id="@+id/express"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存:"
+                    />
+
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分:"/>
+
+                <TextView
+                    android:id="@+id/pro_points"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/buy_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/details_layout"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="购买数量"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/details_layout"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/subtraction"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/whitesmoke"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="-"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/whitesmoke"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/addition"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/whitesmoke"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="+"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/buy_count_text"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="单价(元)"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="20"
+                android:layout_toRightOf="@+id/price_text"
+                android:layout_below="@+id/buy_count_text"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/receipt_address_text"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/price_text"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="选择购买地址"/>
+
+            <TextView
+                android:id="@+id/receipt_address_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/price_text"
+                android:layout_toRightOf="@+id/receipt_address_text"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="山东省临沂市"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/purchase_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/pink"
+                android:text="立即购买"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/middlecontent_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    </LinearLayout>
+
+</FrameLayout>

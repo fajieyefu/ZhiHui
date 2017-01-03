@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.example.administrator.zhihui"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:design:23.0.0'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/fastjson-1.2.5.jar')
+    compile files('libs/commons-lang-2.3.jar')
+    compile files('libs/json-lib-2.2.3-jdk15.jar')
+    compile files('libs/ezmorph-1.0.3.jar')
+    compile files('libs/commons-httpclient-3.1.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/fluent-hc-4.2.5.jar')
+    compile 'org.xutils:xutils:3.3.0'
+    compile files('libs/alipaySdk-20160825.jar')
+    compile files('libs/universal-image-loader-1.9.5 .jar')
+    compile 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.bm.photoview:library:1.4.1'
+//    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+}
+

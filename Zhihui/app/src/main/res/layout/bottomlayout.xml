@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subjective_green"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/firstPage"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@mipmap/shouye"
+        android:text="首页"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/drinkList"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@mipmap/paihang"
+        android:text="喝水排行"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/gongGao"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@mipmap/icon_gonggao"
+        android:text="公告"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/shop"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@mipmap/shopping"
+        android:text="商城"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/my"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="50dip"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@mipmap/mycenter"
+        android:text="我的"
+        android:textSize="14dp" />
+</LinearLayout>

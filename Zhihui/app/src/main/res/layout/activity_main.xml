@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/subjective_green"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line1"
+        android:layout_below="@+id/iv_bg"
+        android:background="#f5f1e6">
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/btn_jiehao"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/yuansuo"
+                android:text="@string/kindergarten_jieshao"/>
+
+            <Button
+                android:id="@+id/btn_liulan"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/liulan"
+                android:text="@string/pic_browse"/>
+
+            <Button
+                android:id="@+id/btn_zixun"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="75dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/zixun"
+                android:text="@string/zhuanjia"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/line2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/btn_shangcheng"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="75dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/shangcheng"
+                android:text="@string/online_market"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_jiaofei"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/jiaofei"
+                android:text="@string/online_buy"/>
+
+            <Button
+                android:id="@+id/btn_gonggao"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/gonggao"
+                android:text="@string/news_open"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="#fc6e84"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.administrator.zhihuiyinshui.activity.layout.BottomLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.administrator.zhihuiyinshui.activity.layout.BottomLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/corner_oval"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="140dip"
+            android:layout_height="140dip"
+            android:src="@mipmap/photo"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+</RelativeLayout>

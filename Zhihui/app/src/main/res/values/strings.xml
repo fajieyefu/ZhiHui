@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">智慧饮水</string>
+    <string name="app_tips">提示</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="company_info">\t\t临沂诚才电子科技有限公司，位于山东临沂国家级经济技术开发区中印软件产业园内，临沂诚才电子科技有限公司是一家致力于提供节能技术、节能产品、节能产品的专业商家。凭借优质的产品和完善的服务体系，公司已是山东大中专院校最大的开水器供应商：不论是产品还是服务，公司都具备绝对领先的优势。我公司以专注和专业的精神，顺应国家倡导的节能减排的理念，向广大用户提供优质产品和完善的解决方案。\n\t\t公司产品结构丰富，现有产品可以广泛用于高校、工厂。医院等场所，“健康、节能。安全、方便、杜绝千沸水、阴阳水”的良好性能深受客户好评；节能减排，惠及你我：优质高效、追求卓越。诚才公司愿成为您的长期合作伙伴，伴您共同成长。</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="lead_more">加载更多</string>
+    <string name="news_detail_title">通知公告</string>
+    <string name="getting_prepayid">正在获取支付信息...</string>
+    <string name="pay_result_callback_msg">微信支付结果：</string>
+    <string name="company_name">临沂诚才电子科技有限公司</string>
+    <string name="copyright">copyright ©2016-2016</string>
+    <string name="kindergarten_jieshao">园所介绍</string>
+    <string name="pic_browse">宝贝喝水记录</string>
+    <string name="zhuanjia">专家咨询</string>
+    <string name="online_market">在线商城</string>
+    <string name="online_buy">在线缴费</string>
+    <string name="news_open">信息公告</string>
+    <string name="exit">退出登录</string>
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+    <string name="drink_title">宝贝喝水记录</string>
+    <string name="drink_recent">近期饮水</string>
+    <string name="drink_today">今日饮水</string>
+    <string name="welcome_text">水——生命之源\nWater Wisdom</string>
+    <string name="welcome_title">智慧诚才</string>
+</resources>
